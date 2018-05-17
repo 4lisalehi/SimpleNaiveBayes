@@ -36,8 +36,10 @@ print(metrics.classification_report(expected, predicted))
 print(metrics.confusion_matrix(expected, predicted))
 
 
-learnset = prepare_person_dataset("data/person_data.txt")
-testset = prepare_person_dataset("data/person_data_testset.txt")
+# prepare and divide spam set into training and test data
+# TODO: implement
+learnset = prepare_sms_dataset("data/spam.csv")
+testset = prepare_sms_dataset("data/spam_testdata.csv")
 print(learnset)
 
 
